@@ -1,0 +1,133 @@
+/* 
+css 파일
+
+파일 전체가 <style></style> 내부라고 보면됨
+
+*/
+
+    /* 기본 속성 선택자 */
+
+div[name="name-1"] {
+    background-color: red;
+}
+
+[name="name-2"]{ /* 범위에 따라 div(선택자) 생략가능 */
+    background-color: yellow;
+}
+
+p[name="name-1"]{
+    background-color: green;
+}
+
+
+    /* 자식 선택자 */
+
+#parent-ul > li {
+    background-color: orange;    
+}
+
+
+    /* 후손 선택자 */
+
+#parent-ul span {
+    background-color: aqua;
+}
+
+#test-div p {
+    background-color: yellowgreen;
+}
+
+
+    /* 반응 선택자 */
+
+.div-cls {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: #ddd;
+    
+    margin-bottom: 30px;
+
+    cursor: pointer; /* 요소에 마우스 올라가면 손가락으로 변경*/
+}
+
+#active-test:active{
+    background-color: yellow;
+}
+
+#active-test{
+    transition-duration: 0.5s;
+}
+
+#hover-test:hover{
+    background-color: aqua;
+    width: 230px;
+    height: 230px;
+    /* 크기 조절도 가능*/
+}
+
+#hover-test {
+    transition-duration: 0.5s;
+}
+
+
+    /* 상태 선택자 */
+
+/* focus */
+#focus-test:focus{
+    background-color: antiquewhite;
+    width: 200px;
+}
+/* checked */
+input[name="fruits"]:checked{
+    width: 30px;
+    height: 30px;
+    /* 크기 외엔 적용 안됨 */
+}
+
+/* enabled / disabled */
+#test-div2 > input:enabled{
+    background-color: lightgreen;
+}
+
+#test-div2 > input:disabled{
+    background-color: lightcoral;
+}
+
+
+    /* 동위 선택자 */
+
+#div-01 + div{
+    background-color: violet;
+}    
+
+#div-03 ~ div{
+    background-color: saddlebrown;
+}
+
+
+    /* 체크박스 모양 바꾸기 */
+
+#check1 + label {
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid hwb(180 14% 19%);
+    
+    display: block;
+
+    cursor: pointer;
+
+    border-radius: 30%; /* 모서리 둥글게*/
+}
+
+/* 체크'된' #check1 뒤에 있는 label 태그 */
+#check1:checked + label{
+    background-image: url(/iamges/imageedit_3_2348370415.gif);
+    background-repeat: no-repeat; /*이미지 반복 제거*/
+    background-size: cover;
+}
+
+#check1{
+    display: none;
+}

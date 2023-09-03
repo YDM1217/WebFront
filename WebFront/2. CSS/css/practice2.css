@@ -1,0 +1,125 @@
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    /* 글자가 자식 */
+}
+
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.container1 {
+    border: 1px solid black;
+    width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 15%;
+    background-color: gray;
+}
+
+.header:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.center-container {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    height: 15%;
+    background-color: gray;
+}
+.footer:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+#left {
+    width: 30%;
+    background-color: lightblue;
+}
+#left:hover {
+    background-color: violet;
+}
+
+#center {
+    width: 50%;
+    background-color: lightgray;
+}
+#center:hover {
+    background-color: violet;
+}
+
+#right {
+    width: 20%;
+    background-color: red;
+}
+#right:hover {
+    background-color: violet;
+}
+#right:active{
+    background-color: tomato;
+}
+/* ----------------------------------------------- */
+
+.container2 {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header2{
+    height: 20%;
+    background-color: red;
+}
+
+.center-container2{
+    height: 80%;
+    background-color: bisque;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#nav{
+    width: 20%;
+    background-color: yellow;
+}
+
+.center3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content2{
+    height: 80%;
+    background-color: yellowgreen;
+}
+
+#footer2{
+    height: 20%;
+    background-color: aqua;
+}
+

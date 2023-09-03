@@ -1,0 +1,51 @@
+/* :only-child */
+#test1 > p:only-child{
+    background-color: blue;
+}   /*요소와 관계 없이
+      자식이 한 개 초과하면 작동 안함*/
+
+
+/* :only-of-type */
+#test2 > p:only-of-type{
+    background-color: red;
+}   /*선택 요소의 자식이 한 개 초과하면 작동 안함*/
+
+
+/* :empty */
+#test3 > p:empty {
+    background-color: brown; 
+    height: 30px;
+}
+
+
+/* 여러 선택자 동시 선택 */
+#test4-1, #test4-2, .test4-3{
+    background-color: yellow;
+    border: 1px solid red ;
+}
+/* margin 설정할 때 주로 사용 */
+
+
+
+/* 요소 내부의 특정 클래스만 선택하기 */
+#test5-1  .c5{
+    /* test5-1의 후손 중, 클래스가 c-5인 애들 선택 */
+    background-color: aqua;
+}
+
+#test5-2 > li.c5{
+    /* test5-2의 후손 중, li면서 클래스가 c-5인 애들 선택 */
+    background-color: hotpink;
+}
+
+#test5-2 > li .c5{
+    /* test5-2의 후손 중, li의 후손 중 c-5인 애들 선택 */
+    background-color: yellowgreen;
+}
+
+
+
+/* 클래스가 여러 개인 요소만 선택 */
+.test6.c6{
+    background-color: blueviolet;
+}

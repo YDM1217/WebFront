@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+/* weight-test */
+
+#weight-test{font-size: 34px;}
+
+#weight-test > li:first-child{font-weight: 600;}
+#weight-test > li:nth-child(2){font-weight: bold;}
+#weight-test > li:nth-child(3){font-weight: bolder;}
+#weight-test > li:nth-child(4){font-weight: lighter;}
+#weight-test > li:nth-child(5){
+    font-weight: normal;
+
+    /* font-style : 글꼴의 모양 지정 */
+    font-style: italic;    
+}
+
+/* font-family */
+.cls > li { font-size: 24px;}
+#family-test1 > li:nth-child(1){
+    font-family: '궁서'; /* 설치되어 있는 폰트의 경우*/
+}
+
+#family-test1 > li:nth-child(2){
+    font-family: '배달의민족체';/* 설치안된 경우 기본 폰트로 설정 */
+}
+
+#family-test1 > li:nth-child(3){
+    font-family: '배달의민족체', '굴림체';
+    /* 없으면 뒤에 폰트(중첩 가능) */
+}
+
+
+/* 웹 폰트 */
+#family-test2 > li:nth-child(1){
+    font-family: 'Merriweather', serif;;
+}
+
+#family-test2 > li:nth-child(2){
+    font-family: 'Qwitcher Grypen', cursive;
+    /* import는 제일 상단에 위치해야함 */
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+#family-test2 > li:nth-child(3){
+    font-family: 'SUITE-Regular';
+}

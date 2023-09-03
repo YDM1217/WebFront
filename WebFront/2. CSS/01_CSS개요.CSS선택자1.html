@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_CSS개요.CSS선택자1</title>
+
+    <style>
+        /* css 주석 */
+        /* style 태그 : css 코드만 작성 가능한 영역 */
+
+        div {
+            border: 3px solid red;
+        }
+
+        strong {
+            background-color: yellow;
+        }
+
+        span {
+            background-color: pink;
+        }
+
+        /* 아이디 선택자(#) */
+        #li-1 {
+            background-color: red;
+        }
+
+        #li-2 {
+            background-color: orange;
+        }
+
+        #li-3 {
+            background-color: yellow;
+        }
+
+        #li-4 {
+            background-color: green;
+        }
+
+        #li-5 {
+            background-color: blue;
+        }
+
+        /* (,)를 이용해 여러 선택자 동시 작성 가능  */
+        #li-1,
+        #li-2,
+        #li-3,
+        #li-4,
+        #li-5 {
+            color: white;
+        }
+
+        /* 클래스 선택자 (.) */
+        .test-1 {
+            color: red;
+        }
+
+        .test-2 {
+            color: teal;
+            background-color: bisque;
+        }
+
+        .aaa {
+            font-weight: bold;
+        }
+
+        /* 모든 요소 선택자 (*) */
+
+        * {
+            font-family: 'HANAMDAUM';
+            font-size: 20px;
+        }
+
+
+        /* 웹폰트 추가*/
+        @font-face {
+            font-family: 'HANAMDAUM';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS(Cascading Style Sheet)</h1>
+
+    <pre>
+        - 마크업 언어(html)가 실제로 화면에 표시되는 방법을 기술하는 언어
+        (모양, 색상, 크기, 스타일 등)
+
+        - html코드가 화면에 어떤 스타일로 보여질지 지정하는 것
+    </pre>
+
+    <hr>
+
+    <h1> CSS Selector(선택자)</h1>
+    <pre>
+        Selector란?
+        - 현재 html 문서 내에서 특정한 요소를 선택하는 문자 또는 문자열
+        - 스타일을 적용하고자 하는 요소를 선택하는 방법
+    </pre>
+
+    <hr>
+
+    <h3>태그 선택자</h3>
+    <pre>
+        현재 html 문서 내에 같은 태그를 선택하는 선택자
+
+        작성법
+        태그명 { css 코드 ;}
+    </pre>
+
+    <div>
+        <strong>strong 태그에 작성된 내용입니다.</strong>
+
+        <br>
+
+        <span>스팬 태그에 작성된 내용입니다.</span>
+
+        <br>
+
+        <ul>
+            <li>
+                <strong>strong 태그에 작성된 내용입니다.</strong>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <span>스팬 태그에 작성된 내용입니다.</span>
+            </li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <h3>id 선택자(#id 속성값)</h3>
+    <pre>
+        HTML 문서 내에서 id 속성값이 일치하는 요소를 선택하는 선택자
+
+        [작성법]
+        #id속성값 { css 코드; }
+
+        # == id
+    </pre>
+
+    <!-- HTML 표기법 : 하이픈 표기법 / 언더바 표기법  -->
+
+    <ol>
+        <li id="li-1">선택자 테스트1</li>
+        <li id="li-2">선택자 테스트2</li>
+        <li id="li-3">선택자 테스트3</li>
+        <li id="li-4">선택자 테스트4</li>
+        <li id="li-5">선택자 테스트5</li>
+    </ol>
+
+    <hr>
+
+    <h3>클래스 선택자(.class속성값)</h3>
+
+    <pre>
+        HTML 문서내에서 같은 class속성값을 가지는 태그를 모두 선택
+
+        [작성법]
+        .class 속성값 {css 코드}
+
+        . == class
+    </pre>
+
+    <ul>
+        <li class="test-1 aaa">클래스 선택자 테스트1</li>
+        <li class="test-2">클래스 선택자 테스트2</li>
+        <li class="test-1">클래스 선택자 테스트3</li>
+        <li class="test-2">클래스 선택자 테스트4</li>
+        <li class="test-1">클래스 선택자 테스트5</li>
+        <li class="test-2 aaa">클래스 선택자 테스트6</li>
+    </ul>
+
+    <hr>
+
+    <h3>모든 요소 선택자 *</h3>
+    <pre>
+        모든 요소를 선택하는 선택자
+    </pre>
+
+</body>
+
+</html>

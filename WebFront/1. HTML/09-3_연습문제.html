@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-3_연습문제</title>
+
+</head>
+
+<body>
+
+    <form action="">
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>필수입력사항</legend>
+
+            <table>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <td>
+                        <input max="10" type="text" placeholder="아이디 10글자 이내" name="id"> 
+                        <button type="button">중복 확인</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        비밀번호
+                    </th>
+                    <td>
+                        <input size="30" type="text" placeholder="영문,숫자,특수문자 포함 8자 이상", name="pw">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        비밀번호확인
+                    </th>
+                    <td>
+                        <input size="30" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Email
+                    </th>
+                    <td>
+                        <input type="email" size="20" type="text" name="email">
+                        <select>
+                            <option selected>직접입력</option>
+                            <option value="hanmail">hanmail.net</option>
+                            <option value="naver">naver.com</option>
+                            <option value="nate">nate.com</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+            <!-- 
+        <p>
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <input max="10" type="text" placeholder="아이디 10글자 이내">
+            <button>중복 확인</button>
+
+            <br>
+
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;비밀번호&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <input size="30" type="text" placeholder="영문,숫자,특수문자 포함 8자 이상">
+
+            <br>
+
+            <b>&nbsp;비밀번호확인&nbsp;</b>
+            <input size="30" type="text">
+
+            <br>
+
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            <input size="15" type="text">
+            <select name="" id="">
+                <option disabled selected>직접입력</option>
+                <option value="">hanmail.net</option>
+                <option value="">naver.com</option>
+                <option value="">nate.com</option>
+            </select> 
+            </p>-->
+        </fieldset>
+
+        <fieldset>
+            <legend>추가정보</legend>
+            <p>
+                프로필 사진 <input type="file"><br><br>
+                성별 :
+                <label for="female">여자<input type="radio" name="gender" id="female" value="woman"></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="male">남자<input checked type="radio" name="gender" id="male" value="man"></label>
+
+                <br><br>
+
+                생년월일 : <input type="date" name="dateIn">
+
+                <br><br>
+
+                취미 <br>
+                <label for="baseball"><input type="checkbox" name="hobby" id="baseball" value="baseball"> 야구 </label>
+                <label for="basketball"><input type="checkbox" name="hobby" id="basketball" value="basketball"> 농구 </label>
+                <label for="football"><input type="checkbox" name="hobby" id="football" value="football"> 축구 </label>
+                <label for="study"><input type="checkbox" name="hobby" id="study" value="study"> 공부 </label>
+                <label for="music"><input type="checkbox" name="hobby" id="music" value="music"> 음악감상 </label><br>
+                <label for="other"><input type="checkbox" name="hobby" id="other" value="other"> 기타 </label>
+                <input type="text" name="hobby" id="other"> 
+                
+
+                <br><br>
+
+                자기소개<br>
+                <textarea style="resize: none;" id="" cols="70" rows="10" name="introduce"></textarea>
+            </p>
+
+        </fieldset>
+        <br><br>
+        <button>회원가입</button>
+        <button type="reset">다시입력</button>
+        <button type="button">이전으로</button>
+    </form>
+
+</body>
+
+</html>

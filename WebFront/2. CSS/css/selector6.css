@@ -1,0 +1,38 @@
+/* 1순위 !important;*/
+div {
+    background-color: hotpink !important;   
+}
+
+
+/* 2순위  */
+/* 태그에 직접 작성 */
+
+
+/* 3순위 id 선택자 */
+#test1 {
+    background-color: black;
+    color: white;    
+}
+
+
+
+/* 4순위 클래스 선택자 */
+.cls1 {
+    background-color: green;
+    font-size: 25px
+}
+.cls1{
+    background-color: yellow;
+}
+/* 동일한 우선 순위는 마지막 작성된 것 적용 */
+
+
+
+
+/* 5순위 태그 선택자 */
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- ctrl + / 마크업용 주석 -->
+<!-- <!DOCTYPE (문서형식 Document Type)> : 현재 문서 형식 지정 -> 현재 문서는 html이다.   -->
+
+<html lang="en">
+
+</html>
+<!-- html 태그 : html문서의 내용을 정의하는 태그 (이안에 코드 작성)  -->
+
+<head>
+    <!-- head 태그 : html문서를 정의하는 태그
+                    문서의 제목, 스타일 시트(css), 스크립트(js), 메타데이터(문서의 일반적 정보) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 출력 기기의 화면 비율 정보  -->
+    <title>01_글자관련태그</title>
+    <!-- 문서의 제목 -->
+</head>
+
+<body>
+    <!-- body 태그 : 화면에 보여질 html 문서의 내용을 정의하는 태그  -->
+
+    기본크기
+    <h1>안녕</h1>
+    <h2>안녕</h2>
+    <h3>안녕</h3>
+    <h4>안녕</h4>
+    <h5>안녕</h5>
+    <h6>안녕</h6>
+    <!-- headline 태그 : 1~6까지, 태그하나가 하나의 문단이 됨 (줄바꿈) -->
+    <!-- 중요한 글씨는 headline으로 -> 단순 p태그로 하면 검색인식이 어려움(SEO) -->
+
+    <br /> <br>
+    <!-- 개행 태그(brake) : 닫힘 태그 없음-->
+
+    <hr />
+    <hr>
+    <!-- 가로 줄 긋기 태그(horizontal) : 닫힘 태그 없음  -->
+
+    &nbsp;
+    <!-- 띄어쓰기(non-braking space) : html에서 단순 띄어쓰기는 한개만 인식함-->
+
+    <p>안녕하세여</p>
+    <p>안녕하세</p>
+    <p>안녕 하세요</p>
+    <!-- p태그(paragraph) : 일단 글 작성 태그 : 종료시 줄바꿈 -->
+
+    <pre>안녕         하세요</pre>
+
+
+
+
+
+    
+    <!-- pre태그(preformatted text) : 시작, 종료 사이 작성된 문자열 형식 그대로를 출력 -->
+
+    <b>b 안녕하세요</b> <br>
+    <!-- b태그(bold) : 단순히 글자 굵게-->
+
+    <strong>strong 안녕하세요</strong> <br>
+    <!-- strong태그 : 글자 강조(웹접근성)  -->
+    <!-- 웹 접근성 
+    일반인 뿐만 아니라 장애인, 고령자들을 위한 
+    서비스를 모두 이용을 보장하는 것 (의무사항) 
+    e.g. ) 스크린 리더 -->
+
+    <i>i 안녕하세요</i> <br>
+    <!-- i태그(italic) : 단순히 글자를 기울임 -->
+
+    <em>em 안녕하세요</em> <br>
+    <!-- em태그(emphasized) : 글자를 강조하는 태그 + 기울이는 태그(웹접근성) -->
+
+    <mark>mark 안녕하세요</mark> <br>
+    <!-- mark태그 : 형광펜 효과를 나타내는 태그 -->
+
+    <u>u안녕하세요</u> <br>
+    <!-- u태그(underline) : 밑줄 긋는 태그 -->
+
+    <s>s안녕하세요</s> <br>
+    <del>del안녕하세요</del>
+    <!-- s태그(strikethrough) : 취소선 태그 <del>도 있음-->
+
+    <small>small 안녕하세요</small> <br>
+    <!-- small태그 : 작은 글자 태그 -->
+
+    sup<sup>sup 안녕하세요</sup> <br>
+    sub<sub>sub 안녕하세요</sub> <br>
+    <!-- sup태그(superscript) : 윗첨자 -->
+    <!-- sub태그(subscript) : 아랫첨자 -->
+
+    <abbr title="안녕하세요"> 안녕하세요 </abbr> <br>
+    <!-- abbr태그(abbreviation) :마우스 오버시 툴팁 태그 -->
+
+    <hr>
+
+    <h3>글자 관련 태그 응용</h3>
+    <p>
+        <mark>태그</mark>들은 해당 태그 내에서 중첩으로 사용가능하다. <br>
+        <string>굵은</string> 글자를 사용할 수도 있고,
+        <em>기울</em>이거나,
+        <s>취소선</s>을 넣는 등 <br>
+        다양하게 사용할 수 있다.
+
+    </p>
+
+
+</body>
+
+</html>

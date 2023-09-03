@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    width: 1140px;
+    margin: auto;
+}
+
+header{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+/* 로고 */
+
+header > section:nth-child(1), section:nth-child(3) {
+    flex-basis: 15%;
+}
+
+header > section:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+}
+
+header > section:nth-child(2){
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-logo{
+    width: 120px;
+}
+
+/* 검색 스타일 */
+
+.search-area{
+    width: 500px;
+}
+
+.search-area > form > fieldset {
+    border: 2px solid #455ba8;
+    border-radius: 5px;
+    margin: 0;
+    padding: 2px;
+
+    display: flex;
+}
+
+#query{
+    padding: 10px;
+    flex-basis: 92%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    /* outline : input태그에 포커스 상태일때 바깥선 */
+}
+
+#search-btn{
+    flex-basis: 8%;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #455ba8;
+    border: none;
+    background-color: transparent;
+    /* transparent : 투명 */
+}
+
+
+/* nav바 */
+
+nav{
+    background-color: white;
+    height: 50px;
+    border-bottom: 2px solid;
+    position: sticky;
+    /* 임계점 도달하면 fixed */
+    /* top, bottom, left, right 속성이 필수로 작성 
+       임계점 도달이 어느 위치에 부착할지 결정    
+    */
+    top: 0; /*최 상단에 붙임*/
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    height :100%;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+
+    display: block
+}
+
+nav a:hover{
+    background-color: #455ba8;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+nav li {
+    flex-basis: 150px;
+}
+
+/* 콘텐츠 영역 */
+
+.content{
+    height: 800px; 
+    display: flex;  
+}
+
+.content-1{
+    flex-basis: 70%;
+}
+
+.content-2{
+    flex-basis: 30%;
+}
+
+/* 로그인 스타일 */
+
+form[name="login-form"]{
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+#id-pw-area{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: 1px solid #ddd;
+    flex-basis : 60%;
+}
+
+#id-pw-area > section:first-child{
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#id-pw-area > section:last-child{
+    flex-basis: 25%;
+}
+
+#id-pw-area input{
+    border: 0;
+    border-right: 1px solid #ddd;
+    flex-basis: 50%;    
+    outline: none;
+    padding: 5px;
+}
+
+#id-pw-area input:first-child{
+    border-bottom: 1px solid #ddd;
+}
+
+#id-pw-area input:focus{
+    border: 2px solid #455ba8;
+}
+
+#id-pw-area button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#id-pw-area button:hover{
+    background-color: #455ba8;
+    color: #ddd;
+}
+
+form[name="login-form"] > label{
+    margin-top: 5px;
+    font-size: 14px;
+    flex-basis: 20%;
+}
+
+#signup-find-area {
+    flex-basis: 20%;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+#signup-find-area a{
+    color: black;
+    text-decoration: none;
+}
+
+#signup-find-area span {
+    padding: 0 10px;
+}
+
+/* footer */
+
+footer{
+    height: 200px;
+    background-color: skyblue;
+    font-size: 14px;
+ 
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-weight: bold;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer span{
+    padding: 0 10px;
+}

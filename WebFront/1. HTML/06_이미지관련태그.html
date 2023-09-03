@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_이미지관련태그</title>
+</head>
+
+<body>
+
+    <h1>img 태그</h1>
+    <pre>
+        - 웹 문서에 사진, 그림 같은 이미지를 삽입하는 용도의 태그
+        
+        [속성]
+
+        1) src : 삽입할 이미지의 경로를 지정하는 속성(파일경로 , 웹주소)
+        2) width / height : 이미지의 크기를 지정하는 속성
+            2-1) 고정크기 : px단위, 화면의 크기와 상관없이 지정된 값의 크기를 갖는 단위
+            2-2) 가변크기 : % - 화면이나 영역기준, 사이트 크기에 따라 이미지 크기가 변경(반응형)
+        3) alt : 이미지를 설명하는 속성 -> 이미지가 출력되지 않는 경우 화면에 직접표시
+
+    </pre>
+
+    <h3>src 속성 확인</h3>
+    <!-- 
+        상대경로 : 현재 위치를 기준으로 경로 지정
+        ..   : 상위
+        /    : 안쪽 
+        ./   : 동일레벨
+     -->
+
+     <!-- 파일경로 -->
+    <img src="images/animals/냐옹이.jpg" width="600" height="400">
+
+    <hr>
+     <!-- 웹 이미지 경로(웹상 절대 경로) -->
+    <img src=https://images.unsplash.com/photo-1692394950102-34e14fafa12d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80 width="400" height="600">
+    
+     <!-- 고정크기 -->
+    <img src="./images/cultural heritage/김홍도, 서당.jpg" height="500px">
+    <img src="./images/cultural heritage/문공유묘 대접.jpg" width="500px">
+    <img src="./images/cultural heritage/용문 필가.jpg"width="500" height="300">
+
+     <!-- 가변크기 -->
+     <img src="/images/animals/잔나비.jpg" width="50%">
+     <img src="/images/animals/시바.jpg" width="70%">
+     <img src="/images/animals/늑대냐 개냐.jpg" width="50%">
+     <br>
+
+     <!-- alt -->
+     <img src="/images/장릉출토 참외모양병.jpg" alt="장릉출토 참외모양 병" width="50%">
+
+</body>
+
+</html>

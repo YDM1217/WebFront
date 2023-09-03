@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_표관련태그</title>
+
+    <!-- <style> : html 문서의 스타일(크기, 모양, 색상, anime 등)을 지정하는 태그 == css -->
+    <style> 
+        .tb3{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .tb3 th, td{
+            border: 1px dotted black;
+        }
+
+        .tb3 thead{
+            background-color: cornflowerblue;
+        }
+
+        .tb3 tbody{
+            background-color:lightblue;
+            text-align: center;
+        }
+
+        .tb3 tfoot{
+            background-color: teal;
+            color: yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>04_표관련태그</h1>
+
+    <pre>
+    
+        <h3>table 태그</h3>
+        - 웹 문서에서 자료 정리를 위해 주로 사용하는 태그
+        - 행과 열로 이루어져 있으며, 행과 열이 교차하는 지점을 셀(cell)이라 칭함
+        - 행과 열이 작성될 수 있는 영역을 지정
+        
+    </pre>
+
+    <pre>
+        <h3>tr 태그(table row)</h3>
+        - 한 행을 나타내는 태그
+    </pre>
+
+    <pre>
+        <h3>td 태그(table data)</h3>
+        - 한 행의 한 컬럼(cell)을 나타내는 태그
+    </pre>
+
+    <pre>
+        <h3>th 태그(table header)</h3>
+        - 컬럼명을 나타내는 태그
+        - 기본 성질은 td와 같음 (디폴트 : 폰트색 red, 가운데 정렬)
+    </pre>
+
+    <pre>
+        <h3>caption 태그</h3>
+        - 테이블 제목이나, 설명 내용을 추가하는 태그
+    </pre>
+
+    <hr>
+
+    <table border = "1"> <!-- border="1" 뜻은 table, td 태그에 1px짜리 검정 테두리 추가-->
+        
+        <tr> <!--1행-->
+            <th>브라우저</th>
+            <th>제조사</th>
+            <th>제조사 홈페이지</th>
+        </tr>
+
+        <tr> <!--2행-->
+            <td>크롬</td>
+            <td>Google</td>
+            <td>www.google.com</td>
+
+        </tr>
+
+        <tr> <!--3행-->
+            <td>Edge</td>
+            <td>Microsoft</td>
+            <td>www.microsoft.com</td>
+
+        </tr>
+
+        <tr> <!--4행-->
+            <td>파이어폭스</td>
+            <td>Mozilla&n</td>
+            <td>www.mozilla.com</td>
+
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>행 병합(rowspan), 열 병합(colspan)</h2>
+    
+    <pre>
+        td 또는 th태그에 작성하는 송성
+        rowspan : 행 (상하) 병합
+        colspan : 열 (좌우) 병합
+    </pre>
+
+    <h3>회원 정보</h3>
+
+    <table border = "1">
+
+        <tr>
+            <th width="70px">이름</th>
+            <td width="210"></td>
+            <th width="140" height="140" rowspan="2">사진</th>
+        </tr>
+
+        <tr>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>주소</th>
+            <td colspan="2" height="35"></td>
+        </tr>
+
+        <tr>
+            <th>자기소개</th>
+            <td colspan="2" height="140"></td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>테이블 구조 설정 태그</h2>
+
+    <pre>
+        thead : 테이블의 상단 영역 (컬럼명)
+        tbody : 테이블의 중단 영역 (실제 값, 내용)
+        tfoot : 테이블의 하단 영역 (합계)
+    </pre>
+
+    <table class="tb3"> 
+
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>20</td>
+                <td>서울 특별시</td>
+            </tr>
+
+            <tr>
+                <td>이오리</td>
+                <td>35</td>
+                <td>서울 특별시</td>
+            </tr>
+
+            <tr>
+                <td>선동일</td>
+                <td>56</td>
+                <td>서울 특별시</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="2">총인원</th>
+                <th>3명</th>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

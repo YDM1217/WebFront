@@ -1,0 +1,100 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.content{
+    width: 150px;
+    height: 150px;
+    /* width, height는 content크기 지정 */
+}
+
+.border{
+    border: 10px dashed rebeccapurple;
+}
+
+.padding{
+    padding: 30px;
+}
+
+.margin{
+    margin: 20px;
+    /* 마진끼리 중첩된 경우 마진값이 더 큰 값을 따름(가중X) */
+}
+
+/* ------------------------------------------- */
+/* 방향성 */
+
+.padding-test {
+    /* padding-top: 60px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 30px; */
+    
+    /* 값이 한 개 : 상하좌우(50) */
+    padding: 50px;
+
+    /* 값이 두 개 : 상하(50) , 좌우(100) */
+    /* padding: 50px 100px; */
+
+    /* 값이 세 개 : 상(50), 좌우(100), 하(200) */
+    /* padding: 50px 100px 200px; */
+
+    /* 값이 네 개 : 상(50), 우(100), 하(200), 좌(300) */
+    /* padding: 50px 100px 200px 300px; */
+
+    /* padding, margin은 같은 패턴 */
+}
+
+.border-test{ /* 속성이 조금 다름*/
+    /* 상하좌우 방향을 별도 지정 불가 */
+    /* 다 따로따로 지정해야함 */
+    border-top: 1px solid red;
+    border-bottom: 5px dotted gold;
+    border-left: 10px dashed blue;
+    border-right: 20px double palevioletred;
+}
+
+.box-container{
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+}
+
+.margin-auto{
+/* */ 
+    margin: auto;
+    margin-top: 100px;
+    /* margin-bottom: 200px; */
+
+    /* 좌우 요소간 간격을 자동으로 지정, margin top은 무시됨
+    해결방법 :  margin-top을 auto보다 밑에 둔다
+    */
+
+}
+
+#box-sizing{
+    /* 테두리가 10px, 패딩 20px, 내용 나머지 
+        전체 요소 크기가 가로/세로 300px인 정사각형 만들기
+        */
+    border: 10px solid;
+    padding: 20px;
+    
+    box-sizing: border-box ;
+    width: 300px;
+    height: 300px;
+
+    /* box-sizing : 설정 해야만 모든 요소
+    (border + padding + content) = 300x300이 됨
+    
+    안하면 content = 300x300 됨
+    */
+} 
+
+/* * {
+    box-sizing: border-box;
+    border: 10px;
+    width: 300px;
+    height: 300px;
+} */

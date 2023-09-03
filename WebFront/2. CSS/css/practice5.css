@@ -1,0 +1,111 @@
+.container{
+    width: 800px;
+    height: 500px;
+    border: 1px solid;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------------------------------- */
+.header{
+    flex-basis: 20%;
+    background-color: yellow;
+    display: flex;
+}
+
+.header > div:first-of-type{
+    flex-basis: 20%;
+    border: 1px solid;
+}
+
+.header > div:not(div:first-of-type){
+    flex-basis: 40%;
+    border: 1px solid;
+}
+
+/* ----------------------------------------- */
+
+.body{
+    flex-basis: 80%;
+    display: flex;
+}
+
+/* ----------------------------------------- */
+
+.body1{
+    flex-basis: 25%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.body1 > div {
+    flex-basis: calc(100% / 3);
+    /* flex-basis: 33%; */
+    border: 1px solid;
+}
+
+/* ----------------------------------------- */
+
+.body2 {
+    border: 1px solid;
+    flex-basis: 10%;
+    background-color: thistle;
+}
+
+/* ----------------------------------------- */
+
+.body3{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body3-top{
+    border: 1px solid;
+    flex-basis: 50%;
+    background-color: orange;
+}
+
+.body3-bottom{
+    flex-basis: 50%;
+    display: flex;
+}
+
+.body3-bottom-left{
+    flex-basis: 50%;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+.body3-bottom-left > div{
+    flex-basis: 50%;
+    border: 1px solid;
+}
+
+.body3-bottom-right{
+    flex-basis: 50%;
+    border: 1px solid;
+    background-color: red;
+}
+
+/* ----------------------------------------- */
+
+.body4{
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+}
+
+.body4 > div:not(div:nth-of-type(2)){
+    border: 1px solid;
+    flex-basis: 20%;
+}
+
+.body4 > div:nth-of-type(2){
+    border: 1px solid;
+    flex-basis: 60%;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_영역관련태그</title>
+
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        #div1 {
+            background-color: red;
+        }
+
+        #div2 {
+            background-color: yellow;
+        }
+
+        #div3 {
+            background-color: green;
+        }
+
+        span {
+            border: 1px solid black;
+        }
+
+        #span1 {
+            background-color: red;
+        }
+
+        #span2 {
+            background-color: yellow;
+        }
+
+        #span3 {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1> 영역을 나누는 형식(성질)</h1>
+
+    <pre>
+    <h3> block 형식 </h3>
+    - 공간을 수직 분할
+    - 크기를 지정하는 width, height 속성 사용 가능
+    - e.g. p/pre태그(문단나누기), h1~h6(제목 영역 나누기), hr(수평선)
+    - ** div(division)(블럭형태)
+    </pre>
+
+    <pre>
+    <h3> in-line 형식</h3>
+    - 공간을 수평 분할
+    - 크기를 지정하는 width, height 속성 사용 불가
+    - e.g. strong, em, mark, span 등
+    </pre>
+
+    <hr>
+    <h2> block(div) / inline(span) 차이점 1 : 줄바꿈</h2>
+    <h3> div태그 </h3>
+    <p>
+        block 형식의 태그는 한 줄을 모두 차지하기 때문에 <br>
+        뒤에 오는 내용이 다음 줄에 작성된다.
+    </p>
+
+    <!-- # = id를 의미 -->
+    <div id="div1">첫번째 영역</div>
+    <div id="div2">두번째 영역</div>
+    <div id="div3">세번째 영역</div>
+
+    <h3> span태그 </h3>
+    <p>
+        inline 형식 태그는 한 줄 내에서 일정한 칸을 차지하기 때문에 <br>
+        뒤에 오는 내용이 줄바뀜 없이 옆에 붙는다.
+    </p>
+
+    <span id="span1">첫번째 영역</span>
+    <span id="span2">두번째 영역</span>
+    <span id="span3">세번째 영역</span>
+
+    <hr>
+
+    <h2> block(div) / inline(span) 차이점 2 : 영역 지정 방식</h2>
+
+    <ul>
+        <li>block : 사각형 박스 형태로 영역을 지정</li>
+        <li>inline : 내부에 작성된 내용(contents) 단위로 영역을 지정</li>
+    </ul>
+
+    <div style="background-color: aqua;">
+        동해물과 백두산이 마르고 닳도록<br>
+        하느님이 보우하사 우리나라 만세<br>
+        무궁화 삼천리 화려강산<br>
+        대한사람 대한으로 길이 보전하세
+    </div>
+    <br>
+
+    <span style="background-color: aqua;">
+        동해물과 백두산이 마르고 닳도록<br>
+        하느님이 보우하사 우리나라 만세<br>
+        무궁화 삼천리 화려강산<br>
+        대한사람 대한으로 길이 보전하세
+    </span>
+
+    <hr>
+    <h2> block(div) / inline(span) 차이점 3 : 크기 지정 </h2>
+
+    <ul>
+        <li>block : 크기 지정 가능</li>
+        <li>inline : 크기 지정 불가능</li>
+    </ul>
+
+    <h3>div 태그</h3>
+
+    <div style="width : 200px; height: 200px; background-color: violet;">TEST</div> <!--인라인 방식 입력(스타일)-->
+    <div style="width : 200px; height: 200px; background-color: aquamarine;">TEST</div> 
+    
+    <h3>span 태그</h3>
+
+    <span style="width : 200px; height: 200px; background-color: violet;">TEST</span>
+    <span style="width : 200px; height: 200px; background-color: aquamarine;">TEST</span> 
+    
+    <hr>
+    <h2>iframe 태그</h2>
+
+    <p> 
+        웹 문서 내부에 다른 웹문서를 추가하는 태그
+        iframe 태그 == inline 형식 but 크기지정이 가능
+    </p>
+
+    <iframe src="04_표관련태그.html" width="800" height="500"></iframe>
+    
+    <hr>
+    
+    <iframe width="800" height="500" 
+    src="https://www.youtube.com/embed/4uGCw-PjWP4?autoplay=1&mute=1" 
+    title="YouTube video player" 
+    frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     allowfullscreen></iframe>"></iframe>
+    
+
+
+</body>
+
+</html>
