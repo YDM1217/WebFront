@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helen's Porfolio</title>
+<meta name="description" content="Junior Web Developer">
+<meta name="author" content="Helen">
+<link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
+<script src="https://kit.fontawesome.com/59b71f7597.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swa
+p" rel="stylesheet">
+<link rel="stylesheet" href="시험.css">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav id="navbar">
+<div class="navbar__logo">
+<a href="#">
+<i class="fa fa-gg" style="color: #EB532E;"></i>
+</a>
+</div>
+<ul class="navbar__menu">
+<li class="navbar__menu__item active" data-link="#home">Home</li>
+<li class="navbar__menu__item" data-link="#about">About</li>
+<li class="navbar__menu__item" data-link="#skills">Skills</li>
+<li class="navbar__menu__item" data-link="#work">Work</li>
+</ul>
+<!-- Toggle button -->
+<button class="navbar__toggle-btn">
+<i class="fas fa-bars"></i>
+</button>
+</nav>
+<!-- Home -->
+<section id="home">
+<div class="home__container">
+<div><h1 class="home__title">유동민</h1></div>
+<div><h2 class="home__description">안녕하세요</h2></div>
+<div><button class="home__contact">Contact me</button></div>
+</div>
+</section>
+
+<section id="about" class="section section__container">
+<h1>자기 소개</h1>
+<div class="about__wrapper">
+<div class="about__intro">
+<div class="about__photo">
+<div class="my__avatar__box"><img src="/00_시험/1.png" class= "my__
+avatar" alt="Helen's profile photo"></div>
+</div>
+<div class="about__text">
+<p>  잘! 하는 개발자가 되고싶습니다.</br> 
+</p>
+</div>
+</div>
+</section>
+<!-- Work -->
+<section id="work" class="section">
+<div class="section__container">
+<h1>My work</h1>
+<div class="work__categories">
+<button class="category__btn all selected" data-filter="*">
+All<span class="category__count"> 2</span></button>
+
+<button class="category__btn" data-filter="web">
+GIT</button>
+
+<button class="category__btn" data-filter="data-analysis">
+TIL</button>
+
+<div class="work__projects">
+<a class="project" href="https://github.com/hpark3/WebPortfolio" target="blank"
+data-type="data-analysis">
+<img class="project__img" src="78.png" alt="W
+ebPortfolio">
+<div class="project__description">
+<h3>My git webpage</h3>
+<span>Clone coding with HTML, and CSS</span>
+</div>
+</a>
+<a class="project" href="https://github.com/hpark3/WebPortfolio" target="blank"
+data-type="mobile">
+<img class="project__img" src="79.png" alt="W
+ebPortfolio">
+<div class="project__description">
+<h3>My personal webpage</h3>
+<span>Clone coding with HTML, and CSS</span>
+</div>
+</a>
+</div>
+</div>
+</section>
