@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>영화</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/title.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/sub.css">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <style>
+      header div{ 
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  
+  border-bottom: 1px solid;
+}
+header div span{
+  padding: 0 20px;
+}
+
+header div h1{
+  font-weight: bolder;
+}
+header div h1 a strong{ 
+  color: #fff;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  padding: 5px;
+}
+a {text-decoration:none;}
+*{
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 100%;
+}
+html{
+  height: 100%;
+
+}
+body{
+
+    background: #ccc;
+}
+hr{
+  display: 100%;
+}
+ul,ol{list-style: none;}
+adress{
+  font-stretch: normal;
+}
+.hide{
+  display: none;
+
+}
+section div.same{ 
+
+  background-color: #fff !important;
+  width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px #999;
+  position: relative;
+  height: 490px;
+}
+section{
+      height: 100% !important;
+      margin: 0 auto;
+      padding: 207px 0px;
+}
+section.main h2:first-child{
+  
+  margin: 26px;
+}
+section.main h2{
+  
+  margin: 14px 0;
+  font-size: 20px;
+}
+section.main p{
+  
+  color: #999;
+}
+section.main ul{
+  
+  display: flex;
+  justify-content: space-around;
+}
+section.main ul li figure a img{
+  
+  width: 200px;
+  height: 250px;
+}
+section.main ul li figure a h2{
+  
+  margin: 10px 0;
+  font-weight: bolder;
+}
+section.main ul li figure a p{
+  
+  color: #999;
+  margin-bottom: 60px;
+}
+.sub1{
+  display: flex;
+  flex-direction: column;
+  
+}
+.subb img{
+  
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: -92px;
+  border-radius: 20px;
+  left: -50px;
+}
+.sub{
+  
+  position: absolute;
+  left: 404px;
+}
+.sub h1{
+  
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.sub p{
+  
+  line-height: 1.5;
+  width: 553px;
+}
+.sub p:nth-of-type(1){
+  margin-bottom: 10px;
+  color: #999;
+  
+}
+.sub button{
+  
+  margin-top: 40px;
+  background-color: orange;
+  border-radius: 20px;
+  padding: 11px;
+  color: #fff;
+}
+.sub span{
+  color: #fff;
+  
+  font-size: 13px;
+  margin-right: 10px;
+}
+.subb span.close{
+  
+  position: absolute;
+  right: 40px;
+  font-size: 33px;
+  top: 20px;
+}
+   </style>
+   
+      </head>
+    <body>
+        <section class ="main same">
+            <div class="same">
+                <header>
+                    <div> 
+                    <span class="material-symbols-outlined menu">menu</span>                    
+                        <h1><a href="">DAILY <strong>UI</strong></a></h1>
+                        <span class="material-symbols-outlined search">search</span>
+                        </ul>
+                    </div>
+                </header> 
+                <div class="inf">
+                <h2>Most Popular Movies</h2>
+                <ul>
+                    <li>
+                        <figure>
+                            <a href="">
+                                <a href="#GO1"><img src="img/1.jpg" alt=""></a>
+                                <h2>명량</h2>
+                                <p>128min 2014</p>
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="">
+                                <a href="#GO2"><img src="img/2.jpg" alt=""></a>
+                                <h2>극한직업</h2>
+                                <p>111min 2019</p>
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="">
+                                <a href="#GO3"><img src="img/3.jpg" alt=""></a>
+                                <h2>신과 함께</h2>
+                                <p>139min 2017</p>
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="">
+                                <a href="#GO4"><img src="img/4.jpg" alt=""></a>
+                                <h2>국제시장</h2>
+                                <p>126min 2014</p>
+                            </a>
+                        </figure>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id ="GO1">
+            <div class="subb same ">
+                <img src="img/1.jpg" alt="">
+                <div class="sub">
+                    <h1>명량</h1>
+                    <p>128min 2014</p>
+                    <p>1597년 임진왜란 6년, 오랜 전쟁으로 인해 혼란이 극에 달한 조선. 무서운 속도로 한양으로 북상하는 왜군에 의해 국가존망의 위기에 처하자 누명을 쓰고 파면 당했던 이순신 장군(최민식)이 삼도수군통제사로 재임명된다. 하지만 그에게 남은 건 전의를 상실한 병사와 두려움에 가득 찬 백성, 그리고 12척의 배 뿐. 마지막 희망이었던 거북선마저 불타고 잔혹한 성격과 뛰어난 지략을 지닌 용병 구루지마(류승룡)가 왜군 수장으로 나서자 조선은 더욱 술렁인다. 330척에 달하는 왜군의 배가 속속 집결하고 압도적인 수의 열세에 모두가 패배를 직감하는 순간, 이순신 장군은 단 12척의 배를 이끌고 명량 바다를 향해 나서는데…! 12척의 조선 vs 330척의 왜군 역사를 바꾼 위대한 전쟁이 시작된다!</p>
+                    <button><span class="material-symbols-outlined">send</span>PLAY MOVIE</button>    
+                </div>
+                <span class="material-symbols-outlined close">close</span>
+            </div>
+        </section>
+        <section id = "GO2">
+            <div class="subb same">
+                <img src="img/2.jpg" alt="">
+                <div class="sub">
+                    <h1>극한직업</h1>
+                    <p>111min 2019</p>
+                    <p>불철주야 달리고 구르지만 실적은 바닥, 급기야 해체 위기를 맞는 마약반! 더 이상 물러설 곳이 없는 팀의 맏형 고반장은 국제 범죄조직의 국내 마약 밀반입 정황을 포착하고 장형사, 마형사, 영호, 재훈까지 4명의 팀원들과 함께 잠복 수사에 나선다. 마약반은 24시간 감시를 위해 범죄조직의 아지트 앞 치킨집을 인수해 위장 창업을 하게 되고, 뜻밖의 절대미각을 지닌 마형사의 숨은 재능으로 치킨집은 일약 맛집으로 입소문이 나기 시작한다. 수사는 뒷전, 치킨장사로 눈코 뜰 새 없이 바빠진 마약반에게 어느 날 절호의 기회가 찾아오는데… </p>
+                    <button><span class="material-symbols-outlined">send</span>PLAY MOVIE</button>    
+                </div>
+                <span class="material-symbols-outlined close">close</span>
+            </div>
+        </section>
+        <section id ="GO3">
+            <div class="subb same">
+                <img src="img/3.jpg" alt="">
+                <div class="sub">
+                    <h1>신과 함께</h1>
+                    <p>139min 2017</p>
+                    <p>저승 법에 의하면, 모든 인간은 사후 49일 동안 7번의 재판을 거쳐야만 한다. 살인, 나태, 거짓, 불의, 배신, 폭력, 천륜 7개의 지옥에서 7번의 재판을 무사히 통과한 망자만이 환생하여 새로운 삶을 시작할 수 있다. “김자홍 씨께선, 오늘 예정 대로 무사히 사망하셨습니다” 화재 사고 현장에서 여자아이를 구하고 죽음을 맞이한 소방관 자홍, 그의 앞에 저승차사 해원맥과 덕춘이 나타난다. 자신의 죽음이 아직 믿기지도 않는데 덕춘은 정의로운 망자이자 귀인이라며 그를 치켜세운다.</p>
+                    <button><span class="material-symbols-outlined">send</span>PLAY MOVIE</button>    
+                </div>
+                <span class="material-symbols-outlined close">close</span>
+            </div>
+        </section>
+        <section id="GO4">
+            <div class="subb same">
+                <img src="img/4.jpg" alt="">
+                <div class="sub">
+                    <h1>국제시장</h1>
+                    <p>126min 2014</p>
+                    <p>1950년대 한국전쟁 이후로부터 현재에 이르기까지 격변의 시대를 관통하며 살아온 우리 시대 아버지 ‘덕수’(황정민 분), 그는 하고 싶은 것도 되고 싶은 것도 많았지만 평생 단 한번도 자신을 위해 살아본 적이 없다. ‘괜찮다’ 웃어 보이고 ‘다행이다’ 눈물 훔치며 힘들었던 그때 그 시절, 오직 가족을 위해 굳세게 살아온 우리들의 아버지 이야기가 지금부터 시작된다.</p>
+                    <button><span class="material-symbols-outlined">send</span>PLAY MOVIE</button>    
+                </div>
+                <span class="material-symbols-outlined close">close</span>
+            </div>
+        </section>
+        
+    </body>
+</html>
